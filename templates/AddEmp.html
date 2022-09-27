@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Add</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('templates', filename='Eapp.css') }}">
+
+</head>
+<body class="bckimg">
+
+    <h1 class="title1">RM Employee Management。</h1>
+    
+    <ul class="navi">
+        <li class="navi2"><a href="/">Home</a></li>
+        <li class="navi2"><a href="/addemp">Add</a></li>
+        <li class="navi2"><a href="/deleteemp">Delete</a></li>
+        <li class="navi2"><a href="/getemp">Retrieve</a></li>
+    </ul>
+
+    <h2 class="title2">Add Employee</h2>
+
+    <div class="container1">
+        <form action="/addemp/output" autocomplete="on" method="POST" enctype="multipart/form-data"> 
+
+            <h3 class="title3" style="text-align: center;">Input Employee Info to Add Employee</h2>
+
+            <form action="/addemp" autocomplete="on" method = "POST" >
+                <br><br>
+                <input class="input1" type="number" placeholder="Employee ID"  name="emp_id" autofocus size="40"><br><br>
+                <input class="input1" type="text" placeholder="First Name" name="first_name" ><br><br>
+                <input class="input1" type="text" placeholder="Last Name" name="last_name" ><br><br>
+                <input class="input1" type="text" placeholder="Primary Skills" name="pri_skill" ><br><br>
+                <input class="input1" type="text" placeholder="Location" name="location" ><br><br>
+                <input type=file name="emp_image_file" class="input2"> <br><br>
+
+                <button class="cmcLiBtn1" type="submit" href="#">ADD EMPLOYEE</button>
+
+            </form>
+        </form>
+    </div>
+
+    <ul class="navi2">
+        <li class="navi2"><a href="/about">About Us</a></li>
+        <li class="navi2"><a href="https://github.com/ChongJingYung/aws-live">Privacy Policy</a></li>
+        <li class="navi2"><a href="https://www.instagram.com/kyung_026/">Kyung :)</a></li>
+    </ul>
+
+</body>
+</html>
+

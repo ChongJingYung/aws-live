@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('templates', filename='Eapp.css') }}">
+
+
+</head>
+<body class="bckimg">
+
+    <h1 class="title1">RM Employee Management。</h1>
+    
+    <ul class="navi">
+        <li class="navi2"><a href="/">Home</a></li>
+        <li class="navi2"><a href="/addemp">Add</a></li>
+        <li class="navi2"><a href="/deleteemp">Delete</a></li>
+        <li class="navi2"><a href="/getemp">Retrieve</a></li>
+    </ul>
+
+    <h2 class="title2">Home</h2>
+
+    <div class="container1">
+        <h3 class="title3">Add Employee</h3>
+
+        <table class="table1">
+            <tr>
+                <td class="td1">
+                    <p>
+                        If your business has reached its capacity to take on new work and you’re experiencing strong revenue growth, hiring new staff can bring many benefits to your workplace.<br>
+                        <b> Why Add New Employee?</b> <br><br>
+                        1. Improve employee morale and mental health.<br>
+                        2. Bring new ideas to your company.<br>
+                        3. Increase the skill set of your workforce.<br>
+                        4. Build your capacity for new work.<br>
+                        5. Grow your revenue.<br>
+
+                    </p>
+                </td>
+                <td class="td2">
+                    <img src="{{ url_for('templates', filename='image/addEmployee.jpg') }}" alt="Adding Employee" width="100%" height="100%">
+                </td>
+            </tr>
+        </table>
+        <a class="cmcLiBtn" href="/addemp">ADD EMPLOYEE</a>
+  
+    </div>
+
+    <div class="container1">
+        <h3 class="title3">Delete Employee</h3>
+
+        <table class="table1">
+            <tr>
+                <td class="td1">
+                    <p>
+                        The employer has to prove that the firing was based on specific behavior and not antipathy toward a group or class of people. Legally, this is described as firing “for cause.”<br>                        
+                        <b> Why Delete Employee?</b> <br><br>
+                        1. Incompetence, including lack of productivity.<br>
+                        2. Insubordination and related issues such as dishonesty.<br>
+                        3. Attendance issues, such as frequent absences or chronic tardiness.<br>
+                        4. Theft or other criminal behavior including revealing trade secrets.<br>
+                        5. Physical violence or threats against other employees.<br>
+
+                        
+
+                    </p>
+                </td>
+                <td class="td2">
+                    <img src="{{ url_for('templates', filename='image/deleteEmployee.jpg') }}" alt="Delete Employee" width="100%" height="100%">
+                </td>
+            </tr>
+        </table>
+        <a class="cmcLiBtn" href="/deleteemp">DELETE EMPLOYEE</a>
+  
+    </div>
+
+    <div class="container1">
+        <h3 class="title3">Retrieve Employee</h3>
+
+        <table class="table1">
+            <tr>
+                <td class="td1">
+                    <p>
+                        All employee infomration in database can be view with searching<br>                        
+                        <b> Why Retrieve Employee?</b> <br><br>
+                        1. Get information from employee.<br>
+                        2. More understand employee.<br>
+                        3. Check employee information.<br>
+                        4. Other.<br>
+
+                    </p>
+                </td>
+                <td class="td2">
+                    <img src="{{ url_for('templates', filename='image/retrieveEmployee.jpg') }}" alt="Retrieve Employee" width="100%" height="100%">
+                </td>
+            </tr>
+        </table>
+        <a class="cmcLiBtn" href="/getemp">RETRIEVE EMPLOYEE</a>
+  
+    </div>
+
+    <ul class="navi2">
+        <li class="navi2"><a href="/about">About Us</a></li>
+        <li class="navi2"><a href="https://github.com/ChongJingYung/aws-live">Privacy Policy</a></li>
+        <li class="navi2"><a href="https://www.instagram.com/kyung_026/">Kyung :)</a></li>
+    </ul>
+
+</body>
+</html>
+
